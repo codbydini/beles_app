@@ -14,13 +14,19 @@ class NewsScreen extends StatelessWidget {
             padding: const EdgeInsets.all(16.0),
             color: AppColors.surface,
             width: double.infinity,
-            child: const Text(
-              'Жаңалықтар',
-              style: TextStyle(
-                fontSize: 24,
-                fontWeight: FontWeight.bold,
-                color: AppColors.primaryBlue,
-              ),
+            child: Row(
+              children: const [
+                Icon(Icons.live_tv, color: AppColors.primaryBlue, size: 26),
+                SizedBox(width: 10),
+                Text(
+                  'Beles Live',
+                  style: TextStyle(
+                    fontSize: 24,
+                    fontWeight: FontWeight.bold,
+                    color: AppColors.primaryBlue,
+                  ),
+                ),
+              ],
             ),
           ),
           
